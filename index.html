@@ -1,74 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product list with cart</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Product list with cart</title>
 
-  Desserts
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
+    <script
+      src="https://kit.fontawesome.com/457c828850.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <h1>Desserts</h1>
+      <div>
+        <img
+          src="/assets/images/image-waffle-mobile.jpg"
+          alt="waffle-with-berries-m"
+        />
+        <div>Waffle with Berries</div>
+        <div>Waffle</div>
+        <div>6.50</div>
+        <button>
+          <img src="/assets/images/icon-add-to-cart.svg" alt="cart" /><span
+            >Add to Cart</span
+          >
+        </button>
+      </div>
+      <div>
+        <img
+          src="/assets/images/image-creme-brulee-mobile.jpg"
+          alt="creme-brule-m"
+        />
+        <div>Vanilla Bean Crème Brûlée</div>
+        <div>Crème Brûlée</div>
+        <div>7.00</div>
+        <button>
+          <img src="/assets/images/icon-add-to-cart.svg" alt="cart" /><span
+            >Add to Cart</span
+          >
+        </button>
+      </div>
+      <div>
+        <img src="/assets/images/image-macaron-mobile.jpg" alt="macaron-m" />
+        <div>Macaron Mix of Five</div>
+        <div>Macaron</div>
+        <div>8.00</div>
+        <button>
+          <img src="/assets/images/icon-add-to-cart.svg" alt="cart" /><span
+            >Add to Cart</span
+          >
+        </button>
+      </div>
+      <div>
+        <img
+          src="/assets/images/image-tiramisu-mobile.jpg"
+          alt="classic-tiramisu-m"
+        />
+        <div>Classic Tiramisu</div>
+        <div>Tiramisu</div>
+        <div>5.50</div>
+        <button>
+          <img src="/assets/images/icon-add-to-cart.svg" alt="cart" /><span
+            >Add to Cart</span
+          >
+        </button>
+      </div>
+      <div>
+        <img
+          src="/assets/images/image-baklava-mobile.jpg"
+          alt="pistachio-baklava-m"
+        />
+        <div>Pistachio Baklava</div>
+        <div>Baklava</div>
+        <div>4.00</div>
+        <button>
+          <img src="/assets/images/icon-add-to-cart.svg" alt="cart" /><span
+            >Add to Cart</span
+          >
+        </button>
+      </div>
+      <div>
+        <img
+          src="/assets/images/image-meringue-mobile.jpg"
+          alt="lemon-meringue-pie-m"
+        />
+        <div>Lemon Meringue Pie</div>
+        <div>Pie</div>
+        <p>5.00</p>
+        <button>
+          <img src="/assets/images/icon-add-to-cart.svg" alt="cart" /><span
+            >Add to Cart</span
+          >
+        </button>
+      </div>
+      <div>
+        <img src="/assets/images/image-cake-mobile.jpg" alt="red-velvet-cake-m" />
+        <div>Red Velvet Cake</div>
+        <div>Cake</div>
+        <div>4.50</div>
+        <button>
+          <img src="/assets/images/icon-add-to-cart.svg" alt="cart" /><span
+            >Add to Cart</span
+          >
+        </button>
+      </div>
+      <div>
+        <img
+          src="/assets/images/image-brownie-desktop.jpg"
+          alt="salted-caramel-brownie-m"
+        />
+        <div>Salted Caramel Brownie</div>
+        <div>Brownie</div>
+        <div>4.50</div>
+        <button>
+          <img src="/assets/images/icon-add-to-cart.svg" alt="cart" /><span
+            >Add to Cart</span
+          >
+        </button>
+      </div>
+      <div>
+        <img
+          src="/assets/images/image-panna-cotta-mobile.jpg"
+          alt="vanilla-panna-cotta-m"
+        />
+        <div>Vanilla Panna Cotta</div>
+        <div>Panna Cotta</div>
+        <div>6.50</div>
+        <button>
+          <img src="/assets/images/icon-add-to-cart.svg" alt="cart" /><span
+            >Add to Cart</span
+          >
+        </button>
+      </div>
+      <div id="cart">
+        <h2>Your Cart (<!-- Quantity -->)</h2>
+        <p>Your added items will appear here</p>
+        <p>Order Total</p>
+        <div><img src="/assets/images/icon-carbon-neutral.svg" alt="bomb-cloud">This is a <b>carbon-neutral</b> delivery</div>
+        <button>Confirm Order</button>
+      </div>
+      <div id="cart-empty">
+        <img src="/assets/images/illustration-empty-cart.svg" alt="empty-cart">
+        <p>Your added items will appear here.</p>
+      </div>
+    </main>
 
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
-
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
-
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/CrypticMango"
+          target="_blank"
+          >Lisa</a
+        >.
+      </div>
+      <div>
+        <a href="https://github.com/CrypticMango/product-list-with-cart-main1" target="_blank"
+          ><i class="fa-brands fa-github-alt"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
 </html>
