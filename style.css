@@ -27,25 +27,62 @@ body {
   /*font weights, 400, 600, 700*/
 }
 
+h1 {
+  padding: 1em 1em 1em 0em;
+}
+
 footer {
   text-align: center;
 }
 
-button {
+.item-card button {
+  position: relative;
+  bottom: 9em;
+  left: 7em;
   border-radius: 2em;
-  border: 3px solid --rose100;
+  border: 1px solid rgba(128, 105, 100, 0.925);
   width: 10em;
   height: 3em;
 }
 
-.item-label {
+.add-to-cart-button {
     display: flex;
-    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-card {
+  padding: 0em 1em 0em 1em;
+}
+
+.item-card button img {
+    padding-right: .5em;
+}
+
+.item-label {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.item-name-one {
+  font-weight: 600;
+  color: var(--rose900);
+}
+
+.item-name-two {
+  color: var(--rose500);
+  font-size: 1em;
+}
+
+.price {
+    color: var(--red);
+    font-weight: 600;
 }
 
 .dessert-pic {
   width: 20em;
   border-radius: 0.5em;
+  padding-bottom: 2em;
 }
 
 .attribution {
