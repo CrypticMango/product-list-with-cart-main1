@@ -27,8 +27,10 @@ body {
   /*font weights, 400, 600, 700*/
 }
 
+
+
 h1 {
-  padding: 1em 1em 1em 0em;
+  padding: 1em 1em 1em .5em;
 }
 
 footer {
@@ -83,6 +85,14 @@ footer {
   width: 20em;
   border-radius: 0.5em;
   padding-bottom: 2em;
+}
+
+#cart {
+  padding-left: .5em;
+}
+
+#cart-empty {
+  padding-left: .5em;
 }
 
 .attribution {
